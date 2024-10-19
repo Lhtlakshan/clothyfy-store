@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="469.0" layoutY="117.0" onAction="#signUpBtnOnAction" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: #12c730;" text="Sign up">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="469.0" layoutY="218.0" onAction="#loginBtnOnAction" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: #12c730;" text="Login">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXButton>
+      <ImageView fitHeight="546.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+
+</AnchorPane>

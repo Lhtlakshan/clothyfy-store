@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.EmployeeDashboard"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="615.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeDashboard">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#249c34" height="646.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="276.0" />
+      <JFXButton buttonType="RAISED" layoutY="118.0" onAction="#btnSuppliersOnAction" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: green;" text="Suppliers" textFill="#cae18b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="176.0" onAction="#btnPlaceOrdersOnAction" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: green;" text="Place Orders" textFill="#cae18b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="234.0" onAction="#btnProductsOnAction" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: green;" text="Products" textFill="#cae18b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="72.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="410.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Text>
+   </children>
 </AnchorPane>

@@ -3,16 +3,11 @@ package controller;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class EmployeeController {
+public class SupplierController {
 
     @FXML
     private TableColumn<?, ?> colCompany;
@@ -42,26 +37,18 @@ public class EmployeeController {
     private JFXTextField txtName;
 
     @FXML
+    private JFXTextField txtProduct;
+
+    @FXML
     private TextField txtSearch;
 
     @FXML
-    void btnAddEmployeeOnAction(ActionEvent event) {
+    void btnAddSupplierOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void btnBackToDashboardOnAction(ActionEvent event) {
-        Stage stage = new Stage();
-        try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/owner/owner_dashboard.fxml"))));
-            stage.show();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @FXML
-    void btnDeleteEmployeeOnAction(ActionEvent event) {
+    void btnDeleteSupplierOnAction(ActionEvent event) {
 
     }
 
@@ -76,9 +63,8 @@ public class EmployeeController {
     }
 
     @FXML
-    void btnUpdateEmployeeOnAction(ActionEvent event) {
+    void btnUpdateOnAction(ActionEvent event) {
 
     }
 
 }
-

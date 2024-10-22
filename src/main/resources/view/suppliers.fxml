@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="625.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#249c34" height="84.0" layoutX="-10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="941.0" />
+      <Text layoutX="367.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppliers">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblEmployees" layoutX="74.0" layoutY="276.0" prefHeight="246.0" prefWidth="824.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="130.4000244140625" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="224.0" text="Name" />
+            <TableColumn fx:id="colCompany" prefWidth="196.79998779296875" text="Company" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="274.39996337890625" text="Email" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtId" layoutX="139.0" layoutY="134.0" prefHeight="30.0" prefWidth="126.0" promptText="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="285.0" layoutY="134.0" prefHeight="26.0" prefWidth="126.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="707.0" layoutY="124.0" onAction="#btnAddSupplierOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Add supplier" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="707.0" layoutY="171.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Update supplier" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="349.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <JFXButton buttonType="RAISED" layoutX="535.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Search" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="360.0" layoutY="205.0" promptText="Search by ID" />
+      <JFXButton buttonType="RAISED" layoutX="707.0" layoutY="218.0" onAction="#btnDeleteSupplierOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Delete supplier" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCompany" layoutX="433.0" layoutY="134.0" prefHeight="26.0" prefWidth="82.0" promptText="Company">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="399.0" layoutY="548.0" onAction="#btnLoadTableBtnOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Load Table" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtEmail" layoutX="139.0" layoutY="203.0" prefHeight="26.0" prefWidth="126.0" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtProduct" layoutX="544.0" layoutY="134.0" prefHeight="30.0" prefWidth="126.0" promptText="Product">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

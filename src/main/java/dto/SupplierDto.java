@@ -5,5 +5,5 @@ public class SupplierDto {
     private String name;
     private String company;
     private String email;
-    private String item;
+    private String product;
 }

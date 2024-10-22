@@ -1,12 +1,18 @@
 package dto;
 
+import entity.OrderEntity;
+
 import java.time.LocalDate;
 import java.util.List;
 
 public class OrderDto {
     private Integer orderId;
-    private List<String> productPurchased;
+    private Integer employeeId;
+    private String employeeName;
+    private String customerName;
+    private String productId;
+    private String productName;
     private Double totalCost;
     private String paymentType;
-    private List<OrderDto> orderDetails;
+    private List<OrderEntity> orderDetails;
 }

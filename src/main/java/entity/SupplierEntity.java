@@ -1,9 +1,9 @@
 package entity;
 
 public class SupplierEntity {
-    private Integer id;
+    private Integer supplierId;
     private String name;
     private String company;
     private String email;
-    private String item;
+    private String product;
 }

@@ -1,5 +1,12 @@
 package dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderDetailsDao {
     private Integer orderId;
     private Integer empId;

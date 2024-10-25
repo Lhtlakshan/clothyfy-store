@@ -69,7 +69,6 @@ public class LoginController {
                         Stage stage = new Stage();
                         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/owner/owner_dashboard.fxml"))));
                         stage.show();
-                        new Alert(Alert.AlertType.INFORMATION , "You are successfully login !!!").show();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }

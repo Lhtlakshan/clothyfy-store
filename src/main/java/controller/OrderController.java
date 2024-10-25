@@ -1,5 +1,6 @@
 package controller;
 
+import dto.OrderDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,7 +35,7 @@ public class OrderController {
     private TableColumn<?, ?> colTotalCost;
 
     @FXML
-    private TableView<?> tblOrders;
+    private TableView<OrderDto> tblOrders;
 
     @FXML
     void btnBackToDashboardOnAction(ActionEvent event) {

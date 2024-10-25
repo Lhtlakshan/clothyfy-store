@@ -26,8 +26,8 @@
             <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="274.39996337890625" text="Email" />
          </columns>
       </TableView>
-      <JFXTextField fx:id="txtId" layoutX="129.0" layoutY="124.0" prefHeight="26.0" prefWidth="90.0" promptText="ID" />
-      <JFXTextField fx:id="txtName" layoutX="316.0" layoutY="129.0" prefHeight="26.0" prefWidth="126.0" promptText="Name" />
+      <JFXTextField fx:id="txtId" layoutX="129.0" layoutY="124.0" prefHeight="26.0" prefWidth="126.0" promptText="ID" />
+      <JFXTextField fx:id="txtName" layoutX="321.0" layoutY="124.0" prefHeight="26.0" prefWidth="126.0" promptText="Name" />
       <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="114.0" onAction="#btnUpdateEmployeeOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #306628;" text="Update employee" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -38,19 +38,19 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="316.0" layoutY="189.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
-      <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="195.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Search" textFill="#e4e0e0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="287.0" layoutY="202.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <JFXButton buttonType="RAISED" layoutX="473.0" layoutY="208.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Search" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <TextField fx:id="txtSearch" layoutX="327.0" layoutY="195.0" promptText="Search by ID" />
+      <TextField fx:id="txtSearch" layoutX="298.0" layoutY="208.0" promptText="Search by ID" />
       <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="208.0" onAction="#btnAddEmployeeOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #306628;" text="Add employee" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="txtCompany" layoutX="548.0" layoutY="129.0" prefHeight="26.0" prefWidth="82.0" promptText="Company" />
+      <JFXTextField fx:id="txtCompany" layoutX="537.0" layoutY="124.0" prefHeight="26.0" prefWidth="126.0" promptText="Company" />
       <JFXButton buttonType="RAISED" layoutX="389.0" layoutY="538.0" onAction="#btnLoadTableBtnOnAction" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Load Table" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -60,6 +60,11 @@
       <JFXButton buttonType="RAISED" layoutX="672.0" layoutY="537.0" onAction="#btnBackToDashboardOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #249c34;" text="&lt;&lt;Back to dashboard">
          <font>
             <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="208.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Clear" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
    </children>

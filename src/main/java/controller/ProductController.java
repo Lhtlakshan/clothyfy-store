@@ -1,6 +1,7 @@
 package controller;
 
 import com.jfoenix.controls.JFXTextField;
+import dto.ProductDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -28,7 +29,7 @@ public class ProductController {
     private TableColumn<?, ?> colSupplierId;
 
     @FXML
-    private TableView<?> tblItems;
+    private TableView<ProductDto> tblItems;
 
     @FXML
     private JFXTextField txtName;

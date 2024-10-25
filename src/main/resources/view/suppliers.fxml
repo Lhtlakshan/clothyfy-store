@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="625.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierController">
    <children>
       <Rectangle arcWidth="5.0" fill="#249c34" height="84.0" layoutX="-10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="941.0" />
@@ -19,12 +18,13 @@
             <Font name="System Bold" size="32.0" />
          </font>
       </Text>
-      <TableView fx:id="tblEmployees" layoutX="74.0" layoutY="276.0" prefHeight="246.0" prefWidth="824.0">
+      <TableView fx:id="tblSuppliers" layoutX="74.0" layoutY="276.0" prefHeight="246.0" prefWidth="824.0">
          <columns>
             <TableColumn fx:id="colId" prefWidth="130.4000244140625" text="ID" />
             <TableColumn fx:id="colName" prefWidth="224.0" text="Name" />
             <TableColumn fx:id="colCompany" prefWidth="196.79998779296875" text="Company" />
-            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="274.39996337890625" text="Email" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="148.800048828125" text="Email" />
+            <TableColumn fx:id="colProduct" minWidth="0.0" prefWidth="120.0001220703125" text="Product" />
          </columns>
       </TableView>
       <JFXTextField fx:id="txtId" layoutX="139.0" layoutY="134.0" prefHeight="30.0" prefWidth="126.0" promptText="ID">
@@ -47,13 +47,13 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="349.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
-      <JFXButton buttonType="RAISED" layoutX="535.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Search" textFill="#e4e0e0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="285.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <JFXButton buttonType="RAISED" layoutX="471.0" layoutY="205.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #306628;" text="Search" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <TextField fx:id="txtSearch" layoutX="360.0" layoutY="205.0" promptText="Search by ID" />
+      <TextField fx:id="txtSearch" layoutX="296.0" layoutY="205.0" promptText="Search by ID" />
       <JFXButton buttonType="RAISED" layoutX="707.0" layoutY="218.0" onAction="#btnDeleteSupplierOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #306628;" text="Delete supplier" textFill="#e4e0e0">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -79,5 +79,10 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="579.0" layoutY="215.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #306628;" text="Clear" textFill="#e4e0e0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
